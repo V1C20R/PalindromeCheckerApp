@@ -23,6 +23,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter String: ");
         String str = input.nextLine();
+        System.out.println("Is it a palindrome string? ");
         System.out.println(c.isPalindrome(str) ? "Yes" : "No");
     }
 }
