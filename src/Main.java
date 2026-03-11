@@ -2,18 +2,17 @@ import java.util.Scanner;
 
 class PalindromeChecker{
     boolean isPalindrome(String str) {
-        int f = 0;
-        int l = str.length() - 1;
-        int count = 0;
-        while (f < l) {
-            if (str.charAt(f) != str.charAt(l)) {
-                return false;
-            }
-            f++;
-            l--;
+        String a = "";
+        for(int i=str.length()-1;i>=0;i--){
+            a+=str.charAt(i);
+        }
+        if(str.equals(a)){
+            return true;
+        }
+        else{
+            return false;
         }
 
-        return true;
     }
 }
 
